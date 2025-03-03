@@ -8,7 +8,6 @@ import {
 import { Bars2Icon } from '@heroicons/react/24/solid'
 import { motion } from 'framer-motion'
 import { Link } from './Link'
-import { Logo } from './Logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 const links = [
@@ -81,9 +80,9 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
       <PlusGrid>
         <PlusGridRow className="relative flex justify-between">
           <div className="relative flex gap-6">
-            <PlusGridItem className="py-3">
+            <PlusGridItem>
               <Link href="/" title="Home">
-                <Logo className="h-9" />
+                <img alt="Arcline Cloud" src="/logo.png" className="h-12" />
               </Link>
             </PlusGridItem>
             {banner && (
